@@ -12,7 +12,6 @@ header{
   position: fixed;
   width: 100%;
   font-size: larger;
-
   z-index: 1;
 }
 
@@ -21,6 +20,13 @@ header{
   z-index: -9999;
 }
 
+button{
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  right: 25px;
+  position: absolute;
+}
 .addForm input{
   height: 30px;
   min-width: calc(100% - 30px);
