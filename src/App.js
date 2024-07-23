@@ -10,10 +10,8 @@ function App() {
 
   const ppp = JSON.parse(localStorage.getItem("To_Do_List"))
 
-  const [items, setItems] = useState(ppp)
+  const [items, setItems] = useState({id:1,item:"hellow",checked:true})
   
-
-
 
   const [newItem, setNewItem] = useState('')
 
