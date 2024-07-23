@@ -24,8 +24,18 @@ button{
   width: 15px;
   height: 15px;
   background-color: red;
+  border: none;
   right: 25px;
   position: absolute;
+}
+
+.addForm button{
+  position: fixed;
+  top: 55px;
+  right: 25px;
+  z-index: 1;
+  background-color: rgb(29, 218, 29);
+  border: none;
 }
 .addForm input{
   height: 30px;

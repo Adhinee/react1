@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css';
 
 const AddItem = ({newItem,setNewItem,handleSubmit}) => {
   return (
