@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaPlus } from 'react-icons/fa'
 
 const AddItem = ({newItem,setNewItem,handleSubmit}) => {
   return (
@@ -17,8 +16,6 @@ const AddItem = ({newItem,setNewItem,handleSubmit}) => {
         <button
         type='submit'
         aria-label='AddItem'>
-            <FaPlus/>
-        
         </button>
     </form>
   )

@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaTrashAlt } from "react-icons/fa";
 import './index.css';
 
 const ItemsList = ({handleChange,handleDelete,items}) => {
@@ -22,7 +21,7 @@ const ItemsList = ({handleChange,handleDelete,items}) => {
                 </label>
     
     
-                <FaTrashAlt
+                <button
                 onClick={() => handleDelete(n.id)}
                 />
               </li>
