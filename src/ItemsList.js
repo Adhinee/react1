@@ -8,7 +8,12 @@ const ItemsList = ({handleChange,handleDelete,items}) => {
         <div className='contented'>
           <ul>
             {items.map((n) => (
-              <li key={n.id}>
+              <li key={n.id}
+              onDoubleClick={() => handleChange(n.id)}>
+                <input 
+                type="checkbox"
+                onChange={() => handleChange(n.id)}
+                checked={n.checked} />
     
                 <label 
                 style={(n.checked) ? {textDecoration:"line-through"}:null}>
@@ -16,6 +21,9 @@ const ItemsList = ({handleChange,handleDelete,items}) => {
                 </label>
     
     
+                <button
+                onClick={handleDelete(n)}
+                />
               </li>
             ))}
           </ul>
