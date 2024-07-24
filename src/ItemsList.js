@@ -21,9 +21,6 @@ const ItemsList = ({handleChange,handleDelete,items}) => {
                 </label>
     
     
-                <button
-                onClick={() => handleDelete(n.id)}
-                />
               </li>
             ))}
           </ul>
