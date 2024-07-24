@@ -3,7 +3,7 @@ import './index.css';
 
 const AddItem = ({newItem,setNewItem,handleSubmit}) => {
   return (
-    <form className='addForm' >
+    <form className='addForm' onSubmit={handleSubmit}>
         <label htmlFor="addItem">Add Item</label>
         <input
             autoFocus
