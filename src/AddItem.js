@@ -14,10 +14,6 @@ const AddItem = ({newItem,setNewItem,handleSubmit}) => {
             onChange={(e) => setNewItem(e.target.value)}
             required />
 
-        <button
-        type='submit'
-        aria-label='AddItem'>
-        </button>
     </form>
   )
 }
