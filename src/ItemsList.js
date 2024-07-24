@@ -10,10 +10,6 @@ const ItemsList = ({handleChange,handleDelete,items}) => {
             {items.map((n) => (
               <li key={n.id}
               onDoubleClick={() => handleChange(n.id)}>
-                <input 
-                type="checkbox"
-                onChange={() => handleChange(n.id)}
-                checked={n.checked} />
     
                 <label 
                 style={(n.checked) ? {textDecoration:"line-through"}:null}>
